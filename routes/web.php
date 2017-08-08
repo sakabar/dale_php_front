@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/show/{id}', ['as' => 'front.show', 'uses' => 'FrontController@show']);
+
